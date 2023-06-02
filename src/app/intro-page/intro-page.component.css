@@ -1,0 +1,43 @@
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+
+.center-tabs {
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+#logoImage{
+  max-width: 70%;
+}
+
+.description {
+  font-size: 20px;
+  text-align: center;
+}
+
+.mat-tab-group {
+  margin-bottom: 48px;
+}
+
+.btn {
+  min-width: 20%;
+  margin: 0 10px;
+}
+
+@media only screen (max-width: 600px) {
+  p{
+    font-size: 10px;
+  }
+
+  .btn {
+    min-width: 20%;
+    margin: 0 10px;
+    font-size: 5px;
+  }
+}

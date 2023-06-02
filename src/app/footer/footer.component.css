@@ -1,0 +1,10 @@
+.icons-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.li-myList{
+    margin: 0 10px;
+}

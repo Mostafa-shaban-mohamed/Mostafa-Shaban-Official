@@ -1,0 +1,74 @@
+<div class="center">
+    <h3 style="text-align: center;">Programming Languages</h3>
+    <div class="card-group">
+        <div class="card center text-white border-dark w-50 bg-dark">
+            C#
+            <div style="display: inline-flex; margin: auto;">
+                <span class="fa fa-star" [ngClass]="csharp > 0? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="csharp > 1? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="csharp > 2? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="csharp > 3? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="csharp > 4? 'checked': ''"></span>
+            </div>
+        </div>
+        <div class="card center text-white border-dark w-50 bg-dark">
+            HTML & CSS
+            <div style="display: inline-flex; margin: auto;">
+                <span class="fa fa-star" [ngClass]="csharp > 0? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="csharp > 1? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="csharp > 2? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="csharp > 3? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="csharp > 4? 'checked': ''"></span>
+            </div>
+        </div>
+        <div class="card center text-white border-dark w-50 bg-dark">
+            Javascript / Typescript
+            <div style="display: inline-flex; margin: auto;">
+                <span class="fa fa-star" [ngClass]="js > 0? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="js > 1? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="js > 2? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="js > 3? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="js > 4? 'checked': ''"></span>
+            </div>
+        </div>
+        <div class="card center text-white border-dark w-50 bg-dark">
+            Python / C++ / Java
+            <div style="display: inline-flex; margin: auto;">
+                <span class="fa fa-star" [ngClass]="py > 0? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="py > 1? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="py > 2? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="py > 3? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="py > 4? 'checked': ''"></span>
+            </div>
+        </div>
+        <div class="card center text-white border-dark w-50 bg-dark">
+            SQL
+            <div style="display: inline-flex; margin: auto;">
+                <span class="fa fa-star" [ngClass]="sql > 0? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="sql > 1? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="sql > 2? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="sql > 3? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="sql > 4? 'checked': ''"></span>
+            </div>
+        </div>
+        <div class="card center text-white border-dark w-50 bg-dark">
+            Angular / React
+            <div style="display: inline-flex; margin: auto;">
+                <span class="fa fa-star" [ngClass]="angular > 0? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="angular > 1? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="angular > 2? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="angular > 3? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="angular > 4? 'checked': ''"></span>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <h3>Softwares & IDEs</h3>
+    <div class="card-group">
+        <div class="card center text-white border-dark w-50 bg-dark" *ngFor="let soft of softwares">
+            {{soft}}
+        </div>
+    </div>
+</div>

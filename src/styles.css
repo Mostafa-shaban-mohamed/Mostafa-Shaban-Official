@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@font-face {
+  font-family: NavBar-Font;
+  src: url("assets/Fonts/LeagueSpartan-VariableFont_wght.ttf");
+}
+
+body{
+  font-family: NavBar-Font;
+  background-color: #181818;
+  color: white;
+}
