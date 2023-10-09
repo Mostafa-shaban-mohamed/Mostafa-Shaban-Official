@@ -4,7 +4,8 @@ import { AppStoreComponent } from './app-store/app-store.component';
 import { IntroPageComponent } from './intro-page/intro-page.component';
 
 const routes: Routes = [
-  {path: '', component: IntroPageComponent },
+  { path: '', redirectTo: 'Home', pathMatch: 'full'},
+  {path: 'Home', component: IntroPageComponent  },
   {path: 'app-store', component: AppStoreComponent}
 ];
 

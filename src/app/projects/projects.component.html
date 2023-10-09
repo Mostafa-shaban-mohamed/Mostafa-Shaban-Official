@@ -14,7 +14,9 @@
   <br>
   <div class="card-list">
     <div class="card center text-white border-dark w-100 bg-dark" style="width: 18rem;">
-      <video src="assets/Videos/Expense Tracker.mp4" autoplay loop></video>
+      <video src="assets/Videos/Expense Tracker.mp4" #video1 
+      (canplay)="video1.play()"
+      (loadedmetadata)="video1.muted = true"></video>
       <div class="card-body">
         <h5 class="card-title">Expense Tracker</h5>
         <p class="card-text">It's Web Application which help users to track their money whether it's expenses or incomes. Using ASP.NET Core 6 (Razor Pages) and Synfusion library (Front-End), This application was able to give great "Data visualization" for the saved records (Expenses & Incomes).</p>
@@ -22,7 +24,10 @@
       </div>
     </div>
     <div class="card center text-white border-dark w-100 bg-dark" style="width: 18rem;">
-      <video src="assets/Videos/El-Nota/App-First-Look.mp4" autoplay loop></video>
+      <video 
+        src="/assets/Videos/El-Nota/App-First-Look.mp4" #video2 
+        (canplay)="video2.play()"
+        (loadedmetadata)="video2.muted = true"></video>
       <div class="card-body">
         <h5 class="card-title">El Nota</h5>
         <p class="card-text">
@@ -30,11 +35,13 @@
           El-Nota helps in creating and managing your daily and schedule tasks and plans. 
           With Friendly Displaying to your plans to increase your productivity.
         </p>
-        <a routerLink="app-store" fragment="El-Nota" class="btn btn-primary">Go To App Store</a>
+        <a routerLink="/app-store" fragment="El-Nota" class="btn btn-primary">Go To App Store</a>
       </div>
     </div>
     <div class="card center text-white border-dark w-100 bg-dark" style="width: 18rem;">
-      <video src="assets/Videos/Student_Preview.mp4" autoplay loop></video>
+      <video src="assets/Videos/Student_Preview.mp4" #video3 
+      (canplay)="video3.play()"
+      (loadedmetadata)="video3.muted = true"></video>
       <div class="card-body">
         <h5 class="card-title">SEES (Smart Educational Enviroment System)</h5>
         <p class="card-text">"S.E.E.S" stands for Smart Educational Environment System, which is my Graduation Project for My Senior Year. I'm Responsible for LMS of this System. A Learning Management System implements a specific e-learning process. It provides an instructor with a way to create and deliver content, monitor student participation and assess student performance.</p>
