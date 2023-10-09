@@ -1,15 +1,20 @@
 <nav class="navbar ng-navbar-dark">
   <div class="container">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" routerLink="" routerLinkActive="active">
       <img class="responsive" src="assets/Images/MyLogo.png" alt="Mostafa-Shaban" width="40px;">
     </a>
-    <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-        Social Medias
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="https://github.com/Mostafa-shaban-mohamed/">GitHub</a>
-        <a class="dropdown-item" href="https://www.linkedin.com/in/mostafa-shaaban-538b20180/">LinkedIn</a>
+    <div style="float: right; display: flex; flex-direction: row;">
+      <div style="margin-right: 10px;">
+        <button class="btn btn-secondary" routerLink="/app-store" type="button">App Store</button>
+      </div>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Social Medias
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="https://github.com/Mostafa-shaban-mohamed/">GitHub</a>
+          <a class="dropdown-item" href="https://www.linkedin.com/in/mostafa-shaaban-538b20180/">LinkedIn</a>
+        </div>
       </div>
     </div>
   </div>
