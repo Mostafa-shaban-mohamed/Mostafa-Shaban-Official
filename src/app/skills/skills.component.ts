@@ -11,13 +11,13 @@ export class SkillsComponent {
   csharp: number = 5;
   js: number = 4;
   java: number = 2;
-  py: number = 2;
+  react: number = 3;
   htmlcss: number = 4;
-  sql: number = 3;
+  sql: number = 4;
   angular: number = 3;
 
   // softwares & IDEs
-  softwares: string[] = ['Visual Studio Code', 'Visual Studio 2022', 'MS SQL Server 2017 - 2019'];
+  softwares: string[] = ['Azure', 'VS 2022 / Code', 'Netlify', 'MS SQL (2017 - 2022)'];
 
   constructor(){}
 }

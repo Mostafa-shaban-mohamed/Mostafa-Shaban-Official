@@ -25,11 +25,11 @@
         <div class="card center text-white border-dark w-50 bg-dark">
             HTML & CSS
             <div style="display: inline-flex; margin: auto;">
-                <span class="fa fa-star" [ngClass]="csharp > 0? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="csharp > 1? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="csharp > 2? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="csharp > 3? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="csharp > 4? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="htmlcss > 0? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="htmlcss > 1? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="htmlcss > 2? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="htmlcss > 3? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="htmlcss > 4? 'checked': ''"></span>
             </div>
         </div>
         <div class="card center text-white border-dark w-50 bg-dark">
@@ -43,13 +43,13 @@
             </div>
         </div>
         <div class="card center text-white border-dark w-50 bg-dark">
-            Python / C++ / Java
+            React / React Native
             <div style="display: inline-flex; margin: auto;">
-                <span class="fa fa-star" [ngClass]="py > 0? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="py > 1? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="py > 2? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="py > 3? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="py > 4? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="react > 0? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="react > 1? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="react > 2? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="react > 3? 'checked': ''"></span>
+                <span class="fa fa-star" [ngClass]="react > 4? 'checked': ''"></span>
             </div>
         </div>
         <div class="card center text-white border-dark w-50 bg-dark">
@@ -63,7 +63,7 @@
             </div>
         </div>
         <div class="card center text-white border-dark w-50 bg-dark">
-            Angular / React
+            Angular
             <div style="display: inline-flex; margin: auto;">
                 <span class="fa fa-star" [ngClass]="angular > 0? 'checked': ''"></span>
                 <span class="fa fa-star" [ngClass]="angular > 1? 'checked': ''"></span>
@@ -76,7 +76,7 @@
 
     <br>
 
-    <h3>Softwares & IDEs</h3>
+    <h3>Softwares & Techs</h3>
     <div class="card-group">
         <div class="card center text-white border-dark w-50 bg-dark" *ngFor="let soft of softwares">
             {{soft}}

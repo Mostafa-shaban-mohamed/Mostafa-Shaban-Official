@@ -11,9 +11,9 @@
 </div>
 <!-- IDEA: Tabs -->
 <div class="center-tabs">
-  <button class="btn btn-dark" value="Projects" (click)="openTab($event)">Projects</button>
-  <button class="btn btn-dark" value="Experience" (click)="openTab($event)">Experience</button>
-  <button class="btn btn-dark" value="Skills" (click)="openTab($event)">Skills</button>
+  <button [ngClass]="isProjects == 'block' ? 'active' : ''" class="btn btn-dark" value="Projects" (click)="openTab($event)">Projects</button>
+  <button [ngClass]="isExperience == 'block' ? 'active' : ''" class="btn btn-dark" value="Experience" (click)="openTab($event)">Experience</button>
+  <button [ngClass]="isSkills == 'block' ? 'active' : ''" class="btn btn-dark" value="Skills" (click)="openTab($event)">Skills</button>
 </div>
 
 <div id="experience" [style.display]="isExperience">
