@@ -10,6 +10,7 @@ export class IntroPageComponent {
   isExperience: string = "none";
   isSkills: string = "none";
   isProjects: string = "none";
+  isArticles: string = 'none';
 
   constructor(){
     this.isProjects = "block";
@@ -20,16 +21,25 @@ export class IntroPageComponent {
       this.isProjects = "block";
       this.isExperience = "none";
       this.isSkills = "none";
+      this.isArticles = "none";
     }
     else if(event.target.value === 'Skills'){
       this.isProjects = "none";
       this.isExperience = "none";
       this.isSkills = "block";
+      this.isArticles = "none";
     }
     else if(event.target.value === 'Experience'){
       this.isProjects = "none";
       this.isExperience = "block";
       this.isSkills = "none";
+      this.isArticles = "none";
+    }
+    else if(event.target.value === 'Articles'){
+      this.isProjects = "none";
+      this.isArticles = "block";
+      this.isSkills = "none";
+      this.isExperience = "none";
     }
   }
 }

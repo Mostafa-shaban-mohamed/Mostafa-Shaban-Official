@@ -1,0 +1,45 @@
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VN3JYPESC3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+  
+      gtag('config', 'G-VN3JYPESC3');
+    </script>
+  </head>
+  <div class="center">
+    <h3>Articles</h3>
+    <br>
+    <div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div *ngFor="let article of articlesList" [ngClass]="article.isActive ? 'active':''" class="carousel-item">
+                <div class="card-list">
+                    <div class="card center text-white border-dark w-100 bg-dark" style="width: 18rem;">
+                      <img [src]="article.imageUrl" alt="article-image" class="article-image center"/>
+                      <div class="card-body">
+                        <h5 class="card-title">{{ article.articleTitle }}</h5>
+                        <p class="card-text">{{ article.description }}</p>
+                        <a [href]="article.url" class="btn btn-primary">Go To Article</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <button (click)="changeSlide(false)" class="carousel-btn carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button (click)="changeSlide(true)" class="carousel-btn carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    
+    <br>
+    <p>Those and more articles on <a href="https://b2-school.netlify.app/">B2 School</a></p>
+  </div>
+  

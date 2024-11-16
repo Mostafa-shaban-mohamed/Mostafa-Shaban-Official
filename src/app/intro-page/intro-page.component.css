@@ -25,19 +25,36 @@
   margin-bottom: 48px;
 }
 
+@keyframes glowing {
+  0% {
+    background-color: #4d5154;
+    box-shadow: 0 0 5px #4d5154;
+  }
+  50% {
+    background-color: #797979;
+    box-shadow: 0 0 5px #797979;
+  }
+  100% {
+    background-color: #4d5154;
+    box-shadow: 0 0 5px #4d5154;
+  }
+}
+#articles-btn{
+  animation: glowing 1300ms infinite;
+}
 .btn {
   min-width: 20%;
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
-@media only screen (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   p{
     font-size: 10px;
   }
 
   .btn {
     min-width: 20%;
-    margin: 0 10px;
+    margin: 0 5px;
     font-size: 5px;
   }
 }
