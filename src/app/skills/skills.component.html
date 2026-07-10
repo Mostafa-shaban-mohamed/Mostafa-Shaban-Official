@@ -1,85 +1,53 @@
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VN3JYPESC3"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-VN3JYPESC3');
-    </script>
-</head>
-<div class="center">
-    <h3 style="text-align: center;">Programming Languages</h3>
-    <div class="card-group">
-        <div class="card center text-white border-dark w-50 bg-dark">
-            C#
-            <div style="display: inline-flex; margin: auto;">
-                <span class="fa fa-star" [ngClass]="csharp > 0? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="csharp > 1? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="csharp > 2? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="csharp > 3? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="csharp > 4? 'checked': ''"></span>
-            </div>
-        </div>
-        <div class="card center text-white border-dark w-50 bg-dark">
-            HTML & CSS
-            <div style="display: inline-flex; margin: auto;">
-                <span class="fa fa-star" [ngClass]="htmlcss > 0? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="htmlcss > 1? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="htmlcss > 2? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="htmlcss > 3? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="htmlcss > 4? 'checked': ''"></span>
-            </div>
-        </div>
-        <div class="card center text-white border-dark w-50 bg-dark">
-            Javascript / Typescript
-            <div style="display: inline-flex; margin: auto;">
-                <span class="fa fa-star" [ngClass]="js > 0? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="js > 1? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="js > 2? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="js > 3? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="js > 4? 'checked': ''"></span>
-            </div>
-        </div>
-        <div class="card center text-white border-dark w-50 bg-dark">
-            React / React Native
-            <div style="display: inline-flex; margin: auto;">
-                <span class="fa fa-star" [ngClass]="react > 0? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="react > 1? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="react > 2? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="react > 3? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="react > 4? 'checked': ''"></span>
-            </div>
-        </div>
-        <div class="card center text-white border-dark w-50 bg-dark">
-            SQL
-            <div style="display: inline-flex; margin: auto;">
-                <span class="fa fa-star" [ngClass]="sql > 0? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="sql > 1? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="sql > 2? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="sql > 3? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="sql > 4? 'checked': ''"></span>
-            </div>
-        </div>
-        <div class="card center text-white border-dark w-50 bg-dark">
-            Angular
-            <div style="display: inline-flex; margin: auto;">
-                <span class="fa fa-star" [ngClass]="angular > 0? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="angular > 1? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="angular > 2? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="angular > 3? 'checked': ''"></span>
-                <span class="fa fa-star" [ngClass]="angular > 4? 'checked': ''"></span>
-            </div>
-        </div>
+<section id="stack" class="portfolio-section section-shell stack-section" aria-labelledby="stack-title">
+  <div class="section-heading">
+    <div>
+      <p class="section-kicker"><span>03</span> Engineering stack</p>
+      <h2 id="stack-title">The right layer,<br>the right tool.</h2>
     </div>
+    <p class="section-intro">
+      Strongest in the .NET ecosystem, with the frontend depth and delivery experience to own a feature from idea to production.
+    </p>
+  </div>
 
-    <br>
+  <div class="stack-grid">
+    <article class="stack-card stack-card-primary">
+      <span class="stack-number">01</span>
+      <p class="stack-label">Backend engineering</p>
+      <h3>Reliable application cores.</h3>
+      <p>Server-side systems designed around clear responsibilities, secure access, and maintainable growth.</p>
+      <ul class="skill-list">
+        <li>C#</li><li>ASP.NET Core</li><li>REST APIs</li><li>Razor Pages</li><li>Clean Architecture</li><li>Dependency Injection</li>
+      </ul>
+    </article>
 
-    <h3>Softwares & Techs</h3>
-    <div class="card-group">
-        <div class="card center text-white border-dark w-50 bg-dark" *ngFor="let soft of softwares">
-            {{soft}}
-        </div>
-    </div>
-</div>
+    <article class="stack-card">
+      <span class="stack-number">02</span>
+      <p class="stack-label">Frontend systems</p>
+      <h3>Interfaces with intent.</h3>
+      <p>Responsive product experiences that make complex workflows feel focused and usable.</p>
+      <ul class="skill-list">
+        <li>Angular</li><li>TypeScript</li><li>JavaScript</li><li>HTML</li><li>CSS</li>
+      </ul>
+    </article>
+
+    <article class="stack-card">
+      <span class="stack-number">03</span>
+      <p class="stack-label">Data &amp; delivery</p>
+      <h3>From query to release.</h3>
+      <p>Practical data modeling, performance awareness, and dependable paths to production.</p>
+      <ul class="skill-list">
+        <li>SQL Server</li><li>Azure</li><li>Netlify</li><li>JWT</li><li>Middleware</li><li>Performance</li>
+      </ul>
+    </article>
+  </div>
+
+  <div class="architecture-line" aria-label="Full-stack delivery flow">
+    <div><span>01</span><strong>Experience</strong><small>Clear interactions</small></div>
+    <i aria-hidden="true">→</i>
+    <div><span>02</span><strong>Application</strong><small>Focused logic</small></div>
+    <i aria-hidden="true">→</i>
+    <div><span>03</span><strong>Data</strong><small>Useful structure</small></div>
+    <i aria-hidden="true">→</i>
+    <div><span>04</span><strong>Delivery</strong><small>Confident releases</small></div>
+  </div>
+</section>

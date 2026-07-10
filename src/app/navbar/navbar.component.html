@@ -1,22 +1,19 @@
-<nav class="navbar ng-navbar-dark">
-  <div class="container">
-    <a class="navbar-brand" routerLink="" routerLinkActive="active">
-      <img class="responsive" src="assets/Images/MyLogo.png" alt="Mostafa-Shaban" width="40px;">
+<header class="site-header">
+  <nav class="nav-shell" aria-label="Primary navigation">
+    <a class="brand" routerLink="/" aria-label="Mostafa Shaaban — home">
+      <img src="assets/Images/MyLogo.png" alt="Mostafa Shaaban logo">
+      <span class="brand-name">Mostafa Shaaban</span>
     </a>
-    <div style="float: right; display: flex; flex-direction: row;">
-      <div style="margin-right: 10px;">
-        <button class="btn btn-secondary" routerLink="/app-store" type="button">App Store</button>
-      </div>
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          Social Medias
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="https://github.com/Mostafa-shaban-mohamed/">GitHub</a>
-          <a class="dropdown-item" href="https://www.linkedin.com/in/mostafa-shaaban-538b20180/">LinkedIn</a>
-          <a class="dropdown-item" href="https://www.youtube.com/@MostafaShaaban98">Youtube</a>
-        </div>
-      </div>
+
+    <div class="nav-links" aria-label="Portfolio sections">
+      <a routerLink="/" fragment="work">Work</a>
+      <a routerLink="/" fragment="experience">Experience</a>
+      <a routerLink="/" fragment="stack">Stack</a>
+      <a routerLink="/" fragment="writing">Writing</a>
     </div>
-  </div>
-</nav>
+
+    <a class="nav-cta" href="mailto:MostafaShaban4522912@gmail.com">
+      Let's talk <span aria-hidden="true">↗</span>
+    </a>
+  </nav>
+</header>

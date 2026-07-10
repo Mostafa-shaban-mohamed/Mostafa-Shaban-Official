@@ -1,34 +1,74 @@
-<div class="center">
-  <img src="assets/Images/MyLogo02.png" id="logoImage" class="img-fluid" alt="My Logo">
-</div>
-<div class="description">
-  <p class="text-justify">Hi, My Name is Mostafa Shaaban</p>
-  <p class="text-justify">.NET Full-Stack Developer</p>
-  <p class="text-justify">Self-motivated Web Developer with high level of experience working on multiple projects.
-    Passionate and hardworking with penchant for meeting deadlines.
-    Outstanding performer in C# .NET (Back-End) and HTML & CSS & Javascript & (React / Angular) (Front-End) within Web development.
-  </p>
-</div>
-<!-- IDEA: Tabs -->
-<div class="center-tabs">
-  <button [ngClass]="isProjects == 'block' ? 'active' : ''" class="btn btn-dark" value="Projects" (click)="openTab($event)">Projects</button>
-  <button [ngClass]="isExperience == 'block' ? 'active' : ''" class="btn btn-dark" value="Experience" (click)="openTab($event)">Experience</button>
-  <button [ngClass]="isSkills == 'block' ? 'active' : ''" class="btn btn-dark" value="Skills" (click)="openTab($event)">Skills</button>
-  <button id="articles-btn" [ngClass]="isArticles == 'block' ? 'active' : ''" class="btn btn-dark" value="Articles" (click)="openTab($event)">Articles</button>
+<section class="hero section-shell" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <p class="eyebrow"><span></span> Senior .NET Full-Stack Developer</p>
+    <h1 id="hero-title">
+      I build web products that stay
+      <span class="hero-accent">fast, clear &amp; ready to grow.</span>
+    </h1>
+    <p class="hero-lead">
+      I’m Mostafa Shaaban—a web developer shaping dependable products from the interface to the API, database, and cloud delivery.
+    </p>
+
+    <div class="hero-actions">
+      <a class="button button-primary" routerLink="/" fragment="work">Explore selected work <span aria-hidden="true">↓</span></a>
+      <a class="button button-ghost" href="mailto:MostafaShaban4522912@gmail.com">Start a conversation <span aria-hidden="true">↗</span></a>
+    </div>
+
+    <div class="hero-proof" aria-label="Career highlights">
+      <div><strong>20+</strong><span>Projects built</span></div>
+      <div><strong>5</strong><span>Professional roles</span></div>
+      <div><strong>Full stack</strong><span>UI to deployment</span></div>
+    </div>
+  </div>
+
+  <div class="hero-visual" aria-label="Mostafa's engineering focus">
+    <div class="visual-orbit visual-orbit-one"></div>
+    <div class="visual-orbit visual-orbit-two"></div>
+    <div class="system-card">
+      <div class="system-card-header">
+        <div class="system-identity">
+          <img src="assets/Images/MyLogo.png" alt="" aria-hidden="true">
+          <div>
+            <span>Engineering profile</span>
+            <strong>Product-minded. System-ready.</strong>
+          </div>
+        </div>
+        <span class="status-dot" aria-label="Active"></span>
+      </div>
+
+      <div class="system-layers">
+        <div class="system-layer">
+          <span class="layer-number">01</span>
+          <div><small>Experience layer</small><strong>Angular · TypeScript · JavaScript</strong></div>
+        </div>
+        <div class="system-layer">
+          <span class="layer-number">02</span>
+          <div><small>Application layer</small><strong>ASP.NET Core · C# · APIs</strong></div>
+        </div>
+        <div class="system-layer">
+          <span class="layer-number">03</span>
+          <div><small>Data &amp; delivery</small><strong>SQL Server · Azure · Netlify</strong></div>
+        </div>
+      </div>
+
+      <div class="system-footer">
+        <span>BUILD MODE</span>
+        <span class="system-pulse"><i></i> End-to-end web engineering</span>
+      </div>
+    </div>
+    <div class="floating-note floating-note-top">Clean architecture</div>
+    <div class="floating-note floating-note-bottom">Product thinking</div>
+  </div>
+</section>
+
+<div class="signal-strip" aria-hidden="true">
+  <div>
+    <span>WEB PRODUCTS</span><i></i><span>SCALABLE APIs</span><i></i><span>THOUGHTFUL INTERFACES</span><i></i><span>CLEAN SYSTEMS</span><i></i>
+    <span>WEB PRODUCTS</span><i></i><span>SCALABLE APIs</span><i></i><span>THOUGHTFUL INTERFACES</span><i></i><span>CLEAN SYSTEMS</span>
+  </div>
 </div>
 
-<div id="experience" [style.display]="isExperience">
-  <app-experience></app-experience>
-</div>
-
-<div id="projects" [style.display]="isProjects">
-  <app-projects></app-projects>
-</div>
-
-<div id="skills" [style.display]="isSkills">
-  <app-skills></app-skills>
-</div>
-
-<div id="articles" [style.display]="isArticles">
-  <app-articles></app-articles>
-</div>
+<app-projects></app-projects>
+<app-experience></app-experience>
+<app-skills></app-skills>
+<app-articles></app-articles>

@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppStoreComponent } from './app-store/app-store.component';
 import { IntroPageComponent } from './intro-page/intro-page.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'Home', pathMatch: 'full'},
-  {path: 'Home', component: IntroPageComponent  },
-  {path: 'app-store', component: AppStoreComponent}
+  { path: '', component: IntroPageComponent },
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    anchorScrolling: 'enabled',
+    scrollPositionRestoration: 'enabled'
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
